@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Vai</button>
+    <p id="demo"></p>
+    <script>
+        function displayTime() {
+            let date = new Date();
+            let time = date.toLocaleTimeString();
+            document.getElementById('demo').textContent = time;
+        }
+
+        const createClock = setInterval(displayTime,1000);
+
+    </script>
+</body>
+</html>
